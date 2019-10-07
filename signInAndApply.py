@@ -56,7 +56,7 @@ try:
   searchButton = waitForElement(driver, 10, By.ID, 'sp-searchButton')
   driver.execute_script("arguments[0].click()", searchButton);
 
-  #waiting for searchApplyButton
+  # waiting for searchApplyButton
   searchApplyButton = waitForElement(driver, 10, By.ID, 'applybutton_152945_en-us')
 
   # applying for the position
