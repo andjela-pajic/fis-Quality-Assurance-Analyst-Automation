@@ -44,12 +44,12 @@ try:
 
   # clicking on search jobs
   driver.find_element_by_xpath('//*[@id="494d8f54-3675-480f-b32f-25b818d09861"]/div/div[2]/div[1]/a/div/div/span[2]/span[2]').click()
-  #wait for the search jobs page
+  # wait for the search jobs page
   searchIframe = waitForElement(driver, 10, By.XPATH, '//*[@id="careersframe"]')
 
   # switch context to the iframe
   driver.switch_to_frame(searchIframe)
-  #filling the button search Job by ID
+  # filling the button search Job by ID
   driver.find_element_by_xpath('//*[@id="com.peopleclick.cp.formdata.SEARCHCRITERIA_CLIENTREQID"]').send_keys('JR80896')
 
   # waiting for Search Button
